@@ -1,4 +1,4 @@
-package specialpythagoreantriplet
+package problem9_specialpythagoreantriplet
 
 import kotlin.math.sqrt
 

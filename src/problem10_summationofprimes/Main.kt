@@ -1,4 +1,4 @@
-package summationofprimes
+package problem10_summationofprimes
 
 import kotlin.math.sqrt
 

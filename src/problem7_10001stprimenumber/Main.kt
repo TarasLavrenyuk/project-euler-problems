@@ -1,4 +1,4 @@
-package `10001stprimenumber`
+package problem7_10001stprimenumber
 
 import kotlin.math.sqrt
 

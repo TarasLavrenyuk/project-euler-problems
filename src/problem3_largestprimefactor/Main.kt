@@ -1,4 +1,4 @@
-package largestprimefactor
+package problem3_largestprimefactor
 
 import kotlin.math.sqrt
 
