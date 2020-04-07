@@ -2,6 +2,17 @@ package utils
 
 object StringMathUtils {
 
+  fun factorial(number: String): String {
+    ensureStringsAreNumber(number)
+    if (number.toInt() < 1) {
+      throw IllegalArgumentException()
+    }
+    if (number == "1") {
+      return number
+    }
+    return mult(number, factorial("${number.toInt() - 1}"))
+  }
+
   fun getPowerOf(number: String, power: Int): String {
     if (power == 0) return "1"
     if (power == 1) return number
