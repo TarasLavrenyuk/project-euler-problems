@@ -1,6 +1,7 @@
 package problem4_trappingrainwater
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/require"
@@ -30,7 +31,7 @@ func TestTrappingRainWater(t *testing.T) {
 	}
 
 	for test := range tests {
-		t.Run("TrappingRainWater", func(t *testing.T) {
+		t.Run("TrappingRainWater "+fmt.Sprintf("%d", test), func(t *testing.T) {
 			require.Equal(t, tests[test].expected, TrappingRainWater(tests[test].heights))
 		})
 	}

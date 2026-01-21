@@ -1,6 +1,7 @@
 package problem5_2sum
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/require"
@@ -29,7 +30,7 @@ func TestTwoSum(t *testing.T) {
 		},
 	}
 	for test := range tests {
-		t.Run("TwoSum", func(t *testing.T) {
+		t.Run("TwoSum "+fmt.Sprintf("%d", test), func(t *testing.T) {
 			require.Equal(t, tests[test].expected, TwoSum(tests[test].nums, tests[test].target))
 		})
 	}

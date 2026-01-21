@@ -1,6 +1,7 @@
 package problem2_arithmeticsubsequencecounter
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/require"
@@ -17,7 +18,7 @@ func TestArithmeticSubsequenceCounter(t *testing.T) {
 	}
 
 	for test := range tests {
-		t.Run("ArithmeticSubsequenceCounter", func(t *testing.T) {
+		t.Run("ArithmeticSubsequenceCounter "+fmt.Sprintf("%d", test), func(t *testing.T) {
 			require.Equal(t, tests[test].expected, ArithmeticSubsequenceCounter(tests[test].nums))
 		})
 	}

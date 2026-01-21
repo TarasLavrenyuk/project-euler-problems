@@ -1,6 +1,7 @@
 package problem7_nextpermutation
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/require"
@@ -70,7 +71,7 @@ func TestNextPermutation(t *testing.T) {
 	}
 
 	for test := range tests {
-		t.Run("NextPermutation", func(t *testing.T) {
+		t.Run("NextPermutation "+fmt.Sprintf("%d", test), func(t *testing.T) {
 			require.Equal(t, tests[test].expected, NextPermutation(tests[test].input))
 		})
 	}
